@@ -317,6 +317,7 @@ func (cfg *Config) handleCredentialRequest(w http.ResponseWriter, req *http.Requ
 PUT /latest/api/token -> token
 GET /latest/meta-data/iam/security-credentials/ -> role name
 GET /latest/meta-data/iam/security-credentials/{role_name} -> creds
+the role_name can be blank
 */
 func (cfg *Config) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	log.Println(req.Method, req.URL.Path)
