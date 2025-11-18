@@ -1,4 +1,5 @@
 // Adapted for use without AWS STS. Original License below.
+// This may only work on CoreWeave's Object Storage Service
 //
 // Copyright 2020 Ben Kehoe
 //
