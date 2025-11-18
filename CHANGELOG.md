@@ -5,6 +5,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.0.0 (2025-11-18)
+
+
+### Features
+
+* add ko build ([4094c78](https://github.com/blairdrummond/imds-credential-server/commit/4094c7832ea21dfe7aaaacb4ea93ca86e90e1b2d))
+
+
+### Bug Fixes
+
+* re-add release-please ([d0ecf7f](https://github.com/blairdrummond/imds-credential-server/commit/d0ecf7f9d3a5cc803ba8c5f8ffa5a74aaf2aa6d8))
+* re-add release-please ([ffee760](https://github.com/blairdrummond/imds-credential-server/commit/ffee760637d98fd14411dbc6364e1c607e43ddfe))
+* remove sts dependency ([b828c7f](https://github.com/blairdrummond/imds-credential-server/commit/b828c7f359e57fc90a242e09fed561ed6f225b0f))
+* update deps ([e29b533](https://github.com/blairdrummond/imds-credential-server/commit/e29b5333d4f346c10e5c0dcdc4c030c86245efbf))
+
 ## [Unreleased]
 
 ### Added
