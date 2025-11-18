@@ -1,5 +1,4 @@
-# .github/workflows/release.yml
-name: Lint and AutoMerge
+name: Lint
 
 on:
   pull_request:
@@ -31,18 +30,3 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  automerge:
-    runs-on: ubuntu-latest
-    if: ${{ github.actor == 'github-actions[bot]' }}
-    steps:
-      - name: Approve a PR
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-      - name: Enable auto-merge for Release-Please PRs
-        run: gh pr merge --auto --rebase "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
