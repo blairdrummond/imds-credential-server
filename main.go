@@ -1,5 +1,4 @@
 // Adapted for use without AWS STS. Original License below.
-// Copyright 2025 CoreWeave
 //
 // Copyright 2020 Ben Kehoe
 //

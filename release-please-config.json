@@ -41,7 +41,7 @@
   "labels": ["autorelease: pending"],
   "release-labels": ["autorelease: tagged"],
   "extra-labels": ["release-please"],
-  "skip-github-release": true,
+  "skip-github-release": false,
   "skip-github-pull-request": false,
   "sequential-calls": false,
   "bootstrap-sha": null,
