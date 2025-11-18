@@ -1,3 +1,5 @@
+// Adapted for use without AWS STS. Original License below.
+//
 // Copyright 2020 Ben Kehoe
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
