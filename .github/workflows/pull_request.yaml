@@ -1,17 +1,14 @@
 # .github/workflows/release.yml
-name: goreleaser
+name: Lint and AutoMerge
 
 on:
   pull_request:
 
 permissions:
   contents: write
-  # packages: write
-  # issues: write
-  # id-token: write
 
 jobs:
-  goreleaser:
+  test-build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -34,3 +31,18 @@ jobs:
           args: release --clean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  automerge:
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'github-actions[bot]' }}
+    steps:
+      - name: Approve a PR
+        run: gh pr review --approve "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      - name: Enable auto-merge for Release-Please PRs
+        run: gh pr merge --auto --rebase "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
