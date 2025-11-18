@@ -5,6 +5,13 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.0](https://github.com/blairdrummond/imds-credential-server/compare/v1.2.0...v1.3.0) (2025-11-18)
+
+
+### Features
+
+* test ci ([95aa11f](https://github.com/blairdrummond/imds-credential-server/commit/95aa11f2c6c365aebec2af1324f7cf91a5692e9c))
+
 ## [1.2.0](https://github.com/blairdrummond/imds-credential-server/compare/v1.1.0...v1.2.0) (2025-11-18)
 
 
