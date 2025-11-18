@@ -1,6 +1,6 @@
 // Adapted for use without AWS STS. Original License below.
 // This may only work on CoreWeave's Object Storage Service,
-// which has AWS-style credentials, but doesn't have Roles.
+// which has AWS-style credentials, but doesn't have Roles
 //
 // Copyright 2020 Ben Kehoe
 //
