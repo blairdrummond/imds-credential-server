@@ -296,7 +296,7 @@ func (cfg *Config) GenerateResponse() (Response, error) {
 	return response, nil
 }
 
-func (cfg *Config) handleCredentialRequest(w http.ResponseWriter, req *http.Request) {
+func (cfg *Config) handleCredentialRequest(w http.ResponseWriter, _ *http.Request) {
 	response, err := cfg.GenerateResponse()
 	if err != nil {
 		log.Println(err)
